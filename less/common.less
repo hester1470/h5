@@ -1,0 +1,93 @@
+//--------------------参数--------------------
+//主题色，用于导航栏等
+@main-color:#d33e42;
+//--------------------通用--------------------
+//div，设置为圆角
+.div_rounded(@w:5px){
+    -moz-border-radius: @w;
+    -webkit-border-radius: @w;
+    border-radius: @w;
+};
+
+
+//-------------------首页---------------------
+.header-style{
+    background-color:@main-color!important;
+    h1{
+        color: #fff;
+        text-shadow: none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+}
+
+.footer-style{
+    background-color:#fff;
+    h1{
+        text-shadow: none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+}
+
+.item{
+    width: 100%;
+    display: -webkit-flex; /* Safari */
+    display: flex;    
+    .item-left{
+        flex-grow: 0;
+        width: 100px;
+        img{
+            width: 90%;
+            padding-left: 5px;
+        }
+        p{
+            color: red;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+    .item-right{
+        flex-grow: 2;
+        span{
+            font-size: 12px;
+
+        }
+        .s-blue{
+            padding: 1px 5px;
+            border: 1px solid;
+            .div_rounded(3px);            
+            color: #29b2c2;
+            border-color: #29b2c2
+        }
+        .s-yellow{
+            padding: 1px 5px;
+            border: 1px solid;
+            .div_rounded(3px);              
+            color: #f2ce3f;
+            border-color: #f2ce3f
+        }
+        .author{
+            margin:0px;
+            padding: 0px;
+            font-size: 12px;
+            color: #666;
+            text-align: right;
+        }
+    }
+
+}
+/*
+.items{
+    width: 100%;
+    .item-left{
+        float: left;
+        width: 30%;
+    }
+    .item-right{
+        width: 70%;
+        float: right;
+    }
+
+}
+*/
