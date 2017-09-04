@@ -22,6 +22,14 @@
     };
 };
 
+//flex
+.use_flex{
+    display: -webkit-flex;  /* 新版本语法: Chrome 21+ */
+    display: flex;          /* 新版本语法: Opera 12.1, Firefox 22+ */
+    display: -webkit-box;   /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;      /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;   /* 混合版本语法: IE 10 */   
+}
 //-------------------首页---------------------
 .header-style{
     background-color:@main-color!important;
@@ -33,38 +41,39 @@
     }
 
 }
-    //保姆种类的导航
-    .nav{
-        background: #fff!important;
-        ul{
-            font-size: 14px;
-            margin:0px;
-            padding:0px;
-            text-align: center;
-            display: -webkit-flex; /* Safari */
-            display: flex; 
-            list-style: none!important;
-            //.a_style(#444;#444);
-            .nav-li-active{
-                color:@main-color!important;
-            };
-            li{
-                color: #444;
-                padding-top:5px;
-                padding-bottom:5px;
-                flex-grow: 1;
-            }
-            .sort-icon{
-                flex-grow: 0;
-                width: 20px;
-                padding:5px 5px 0px 0px;
-                img{
-                    width:100%;
-                }
+//保姆种类的导航
+.nav{
+    background: #fff!important;
+    ul{
+        font-size: 14px;
+        margin:0px;
+        padding:0px;
+        text-align: center; 
+        .use_flex;
+        //display: -webkit-flex; /* Safari */
+        display: flex; 
+        list-style: none!important;
+        //.a_style(#444;#444);
+        .nav-li-active{
+            color:@main-color!important;
+        };
+        li{
+            color: #444;
+            padding-top:5px;
+            padding-bottom:5px;
+            flex-grow: 1;
+        }
+        .sort-icon{
+            flex-grow: 0;
+            width: 20px;
+            padding:5px 5px 0px 0px;
+            img{
+                width:100%;
             }
         }
-        
     }
+    
+}
 
 //所在页面（底部）
 .nav2{
@@ -92,6 +101,7 @@
     .item-left{
         flex-grow: 0;
         width: 100px;
+        min-width: 100px;
         img{
             width: 85px;
             padding-left: 5px;

@@ -1,3 +1,15 @@
+.use_flex {
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+}
 .header-style {
   background-color: #d33e42 !important;
 }
@@ -16,7 +28,14 @@
   padding: 0px;
   text-align: center;
   display: -webkit-flex;
-  /* Safari */
+  /* 新版本语法: Chrome 21+ */
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
   display: flex;
   list-style: none!important;
 }
@@ -61,6 +80,7 @@
 .item .item-left {
   flex-grow: 0;
   width: 100px;
+  min-width: 100px;
 }
 .item .item-left img {
   width: 85px;
