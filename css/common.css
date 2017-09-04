@@ -73,6 +73,7 @@
   margin: 0px;
 }
 .item .item-right {
+  margin-left: 5px;
   flex-grow: 2;
 }
 .item .item-right span {
