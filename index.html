@@ -34,6 +34,8 @@
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
 </head>
 	
 <body>
@@ -42,13 +44,13 @@
         <div data-role="header"  data-position="fixed"  class="header-style">
             <a href="#" class="ui-btn ui-icon-location ui-btn-icon-left">海淀</a>
             <h1>家政超市</h1>
-            <div data-role="navbar" data-position="fixed">
+            <div class="nav" data-position="fixed">
                 <ul>
-                    <li><a href="#anylink">推荐</a></li>
-                    <li><a href="#anylink">保姆</a></li>
-                    <li><a href="#anylink">育儿嫂</a></li>
-                    <li><a href="#anylink">小时工</a></li>
-                    <li><a href="#anylink" class="ui-btn ui-icon-bullets ui-btn-icon-right">&nbsp;</a></li>
+                    <li onclick="refreshList('tuijian')">推荐</li>
+                    <li onclick="refreshList('baomu')">保姆</li>
+                    <li onclick="refreshList('yuersao')">育儿嫂</li>
+                    <li onclick="refreshList('xiaoshigong')">小时工</li>
+                    <li onclick="sort()" class="sort-icon"> <img src="images/sort.png" alt=""> </li>
                 </ul>
             </div> 
         </div>
@@ -163,11 +165,11 @@
         </div>
 
         <div data-role="footer"  data-position="fixed" class="footer-style" >
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#anylink">招聘大厅</a></li>
-                    <li><a href="#anylink">招聘发布</a></li>
-                    <li><a href="#anylink">我的</a></li>
+            <div class="nav">
+                <ul class="nav2">
+                    <li>招聘大厅</li>
+                    <li>招聘发布</li>
+                    <li>我的</li>
                 </ul>
             </div>
         </div>

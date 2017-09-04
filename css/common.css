@@ -7,6 +7,39 @@
   box-shadow: none;
   -webkit-box-shadow: none;
 }
+.nav {
+  background: #fff!important;
+}
+.nav ul {
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  list-style: none!important;
+}
+.nav ul .nav-li-active {
+  color: #d33e42 !important;
+}
+.nav ul li {
+  color: #444;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  flex-grow: 1;
+}
+.nav ul .sort-icon {
+  flex-grow: 0;
+  width: 20px;
+  padding: 5px 5px 0px 0px;
+}
+.nav ul .sort-icon img {
+  width: 100%;
+}
+.nav2 {
+  height: 30px;
+}
 .footer-style {
   background-color: #fff;
 }

@@ -8,7 +8,19 @@
     -webkit-border-radius: @w;
     border-radius: @w;
 };
-
+//链接的颜色设置
+.a_style(@a_color,@a_hover){
+    a{
+        text-decoration: none;
+        color:@a_color;
+        cursor:pointer;
+    };
+    a:hover{
+        text-decoration: none;
+        color: @a_hover;
+        cursor:pointer;
+    };
+};
 
 //-------------------首页---------------------
 .header-style{
@@ -19,6 +31,44 @@
         box-shadow: none;
         -webkit-box-shadow: none;
     }
+
+}
+    //保姆种类的导航
+    .nav{
+        background: #fff!important;
+        ul{
+            font-size: 14px;
+            margin:0px;
+            padding:0px;
+            text-align: center;
+            display: -webkit-flex; /* Safari */
+            display: flex; 
+            list-style: none!important;
+            //.a_style(#444;#444);
+            .nav-li-active{
+                color:@main-color!important;
+            };
+            li{
+                color: #444;
+                padding-top:5px;
+                padding-bottom:5px;
+                flex-grow: 1;
+            }
+            .sort-icon{
+                flex-grow: 0;
+                width: 20px;
+                padding:5px 5px 0px 0px;
+                img{
+                    width:100%;
+                }
+            }
+        }
+        
+    }
+
+//所在页面（底部）
+.nav2{
+    height:30px;
 }
 
 .footer-style{
