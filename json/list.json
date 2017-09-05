@@ -1,4 +1,52 @@
 {
     "status":"success",
-    "data":"123"
+    "data":[
+        {
+            "recruit_id":"a0001",
+            "publisher":"uesr01",
+            "work_nature":"住家",
+            "rest_type":"双休",	
+            "salary":"3000-2800/月",
+            "content":"想找个靠谱点的阿姨，照顾老人，要求性格好，诚实，有耐心。能做可口饭菜",
+            "age":"20-30岁",	
+            "native_place":"限南方",	
+            "create_time":"12.09"
+        },
+        {
+            "recruit_id":"a0002",
+            "publisher":"uesr02",
+            "work_nature":"住家",
+            "rest_type":"双休",	
+            "salary":"3000-2800/月",
+            "content":"想找个靠谱点的阿姨，照顾老人，要求性格好，诚实，有耐心。能做可口饭菜",
+            "age":"20-30岁",	
+            "native_place":"限南方",	
+            "create_time":"12.09"
+        },
+        {
+            "recruit_id":"a0003",
+            "publisher":"uesr03",
+            "work_nature":"住家",
+            "rest_type":"双休",	
+            "salary":"3000-2800/月",
+            "content":"想找个靠谱点的阿姨，照顾老人，要求性格好，诚实，有耐心。能做可口饭菜",
+            "age":"20-30岁",	
+            "native_place":"限南方",	
+            "create_time":"12.09"
+        },
+        {
+            "recruit_id":"a0004",
+            "publisher":"uesr04",
+            "work_nature":"住家",
+            "rest_type":"双休",	
+            "salary":"3000-2800/月",
+            "content":"想找个靠谱点的阿姨，照顾老人，要求性格好，诚实，有耐心。能做可口饭菜",
+            "age":"20-30岁",	
+            "native_place":"限南方",	
+            "create_time":"12.09"
+        }
+
+    ]
 }
+
+
